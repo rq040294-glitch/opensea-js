@@ -52,3 +52,12 @@ const openseaSDK = new OpenSeaSDK(walletWithProvider, {
 ```
 
 In a browser with web3 or an extension like [MetaMask](https://metamask.io/) or [Coinbase Wallet](https://www.coinbase.com/wallet), you can use `window.ethereum` to access the native provider.
+
+// Create a new EOA
+const newAccount = await cdp.evm.createAccount();
+
+// Import an existing EOA from private key
+const importedAccount = await cdp.evm.importAccount({
+  privateKey: "0x0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+  name: "imported-account"
+});
