@@ -1,0 +1,12 @@
+{
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "cdp_listBalances",
+    "params": [
+        {
+        "address": "0x0e73fc61bb9d6b7588910c2d14e83bae68222c5d",
+        "pageToken": "",
+        "pageSize": 2
+        }
+    ]
+}
